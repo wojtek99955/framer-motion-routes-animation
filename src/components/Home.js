@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Container = styled.div`
   margin-top: 5rem;
+  position: relative;
 `;
 const Wrapper = styled.div`
   max-width: 700px;
@@ -17,8 +19,29 @@ const Wrapper = styled.div`
 `;
 
 function Home() {
+  const homeVariants = {
+    hidden: {
+      opacity: 0,
+      x: "100vw",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.2 },
+    },
+    exit: {
+      x: "-100vw",
+      transition: { ease: "easeInOut" },
+    },
+  };
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      variants={homeVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <Wrapper>
         <h1>Welcome to Animated Routes Website!</h1>
         <p>

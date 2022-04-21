@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -18,8 +19,29 @@ const Wrapper = styled.div`
 `;
 
 function About() {
+  const aboutVariants = {
+    hidden: {
+      opacity: 0,
+      x: "100vw",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.2 },
+    },
+    exit: {
+      x: "-100vw",
+      transition: { ease: "easeInOut" },
+    },
+  };
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      variants={aboutVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <Wrapper>
         <h1>About us!</h1>
         <p>
