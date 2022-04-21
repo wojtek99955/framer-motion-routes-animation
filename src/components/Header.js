@@ -26,20 +26,27 @@ const Nav = styled.nav`
   }
 `;
 
+const StyledNavLink = styled(NavLink)`
+  color: White;
+  text-decoration: none;
+`;
+
 function Header() {
   return (
     <HeaderContainer>
-      <Logo>Animated Routes</Logo>
+      <Logo>
+        <StyledNavLink to="/">Animated Routes</StyledNavLink>
+      </Logo>
       <Nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <StyledNavLink to="/">Home</StyledNavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <StyledNavLink to="/about">About</StyledNavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <StyledNavLink to="/contact">Contact</StyledNavLink>
           </li>
         </ul>
       </Nav>
