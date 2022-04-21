@@ -10,6 +10,7 @@ const HeaderContainer = styled.header`
 const Logo = styled.div`
   color: white;
   font-size: 1.5rem;
+  cursor: pointer;
 `;
 const Nav = styled.nav`
   ul {
@@ -20,6 +21,7 @@ const Nav = styled.nav`
   li {
     color: white;
     font-size: 1.3rem;
+    cursor: pointer;
   }
 `;
 
