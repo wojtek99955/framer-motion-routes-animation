@@ -1,22 +1,6 @@
 import { motion } from "framer-motion";
-import styled from "styled-components";
-
-const Container = styled.div`
-  margin-top: 5rem;
-`;
-const Wrapper = styled.div`
-  max-width: 700px;
-  margin: auto;
-  h1 {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  p {
-    width: 80%;
-
-    margin: auto;
-  }
-`;
+import { Wrapper } from "../../assets/atoms/Wrapper";
+import { Container } from "../../assets/atoms/Container";
 
 function About() {
   const aboutVariants = {

@@ -1,21 +1,9 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { Container } from "../assets/atoms/Container";
+import { Wrapper } from "../assets/atoms/Wrapper";
 
-const Container = styled.div`
-  margin-top: 5rem;
-`;
-const Wrapper = styled.div`
-  max-width: 700px;
-  margin: auto;
-  h1 {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  p {
-    width: 80%;
-
-    margin: auto;
-  }
+const StyledWrapper = styled(Wrapper)`
   textarea {
     margin: 2rem 0;
     width: 100%;
@@ -55,7 +43,7 @@ function Contact() {
       animate="visible"
       exit="exit"
     >
-      <Wrapper>
+      <StyledWrapper>
         <h1>Contact us!</h1>
         <p>
           {" "}
@@ -67,7 +55,7 @@ function Contact() {
         </p>
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <button>Send!</button>
-      </Wrapper>
+      </StyledWrapper>
     </Container>
   );
 }

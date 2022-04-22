@@ -1,9 +1,8 @@
 import { GlobalStyle } from "./assets/globalStyles";
-import styled from "styled-components";
-import Header from "./components/Header";
-import Home from "./components/Home";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
-import About from "./components/About";
+import About from "./components/About/About";
 import Contact from "./components/Contact";
 import { AnimatePresence } from "framer-motion";
 
