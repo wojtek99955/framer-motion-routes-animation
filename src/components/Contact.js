@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Container } from "../assets/atoms/Container";
 import { Wrapper } from "../assets/atoms/Wrapper";
+import { pageVariants } from "../assets/variants/pageVariants";
 
 const StyledWrapper = styled(Wrapper)`
   textarea {
@@ -20,25 +21,10 @@ const StyledWrapper = styled(Wrapper)`
 `;
 
 function Contact() {
-  const contactVariants = {
-    hidden: {
-      opacity: 0,
-      x: "100vw",
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.2 },
-    },
-    exit: {
-      x: "-100vw",
-      transition: { ease: "easeInOut" },
-    },
-  };
   return (
     <Container
       as={motion.div}
-      variants={contactVariants}
+      variants={pageVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
