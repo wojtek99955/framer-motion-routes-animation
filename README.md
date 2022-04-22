@@ -6,7 +6,7 @@ A simple website with animated routes
 
 ## Live
 
-Link:
+Link: https://wojtekk-framer-motion-page-transition.netlify.app/
 
 ## Technologies
 
