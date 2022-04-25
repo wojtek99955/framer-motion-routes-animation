@@ -15,6 +15,10 @@ Link: https://wojtekk-framer-motion-page-transition.netlify.app
 - framer-motion
 - react-router
 
+## Screenshot
+
+![animated-routes](https://i.ibb.co/r0tn4T0/animated-routes.png)
+
 ## Installation
 
 Download or clone the repository
